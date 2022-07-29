@@ -1,0 +1,42 @@
+.donatePage{
+    display: flex;
+    background-color: #eeeef6;
+
+    .donate{
+        flex: 3;
+    }.title{
+        margin-bottom: 10%;
+        border-color: rgb(196, 233, 10);
+        background-color: rgb(76, 243, 76);
+    }.donate-container{
+        height: 70%;
+}button {
+    border: none;
+}
+    .btn-div{
+      margin-right: 30%; 
+      margin-top:1%;
+      :hover{background-color: rgb(238, 249, 93);}
+     
+      
+    }.lgout-btn{
+        color: indigo;
+        margin-left: 80%;
+        margin-top: 80%;
+      
+      }input{
+        padding:10px;
+        box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+        border-radius:10px;
+        width:40%;
+        
+      }.input-group{
+        padding:10px;
+        margin:6px;
+        :hover{background-color: rgb(244, 244, 79);}
+      }.border-customized-input {
+        border: 2px solid #eee;
+     }label{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     }
+}

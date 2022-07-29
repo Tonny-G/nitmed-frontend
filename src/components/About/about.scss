@@ -1,0 +1,28 @@
+.aboutPage{
+    display: flex;
+    background-color: lightgrey;
+    .about{
+        flex: 3;
+        width: 80%;
+        height: 98%;
+    }.body{
+       align-content: space-around;
+       justify-content: center;
+       font-weight: 500;
+       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+       
+    }.title{
+        padding-bottom: 5%;
+        background-color: rgb(18, 84, 18);
+        color: white;
+    }
+    
+    .list{
+        list-style: none;
+   
+    }.encrgmnt{
+        color: yellow;
+        margin: 5px;
+    }.founder{
+        margin: 3px;
+    }}
