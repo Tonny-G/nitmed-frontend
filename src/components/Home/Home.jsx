@@ -1,11 +1,9 @@
 import React from 'react'
 import "./home.scss"
-import {  Link } from "react-router-dom";
-
-import Donate from '../Donate/Donate'
-import Order from '../Order/Order'
-import About from '../About/About'
 import SideBar from '../SideBar/SideBar'
+import DisplayDonations from '../Display/DisplayDonations'
+import DisplayUsers from '../Display/DisplayUsers'
+
 
 
 
@@ -19,6 +17,12 @@ const Home = ({setUser}) => {
         </ul>
         <div className='footer'> <u>OUR EVENTS AND NEWS</u>
       <div className='blogs'>No blogs to display at the moment</div>
+        <div>
+          <DisplayDonations/>
+         
+          <div><DisplayUsers/></div>
+        
+        </div>
       </div>
       </navbar>
    

@@ -27,7 +27,7 @@ function Register() {
     if (confirmPassword !== password) {
       setError(true)
       setStatusOpen(true)
-      setErrorMessage("Confirm password is not match")
+      setErrorMessage("Passwords don't match")
       setStatusMessage(errorMessage)
       return false
     }
@@ -78,17 +78,17 @@ function Register() {
             <div className="inputContainer">
             <form className='form' onSubmit={handleSubmit}>
                 <label htmlFor="fullname">FullName</label>
-                <input onChange={(e) => setfullname(e.target.value)} type="text"  placeholder='Enter your fullname' id="fullname" />
+                <div className='input-group'> <input onChange={(e) => setfullname(e.target.value)} type="text"  placeholder='Enter your fullname' id="fullname" /></div>
                 <label htmlFor="email">Email</label>
-                <input onChange={(e) => setemail(e.target.value)} type="email"  placeholder='Enter your email' id="emil" />
+                <div className='input-group'>  <input onChange={(e) => setemail(e.target.value)} type="email"  placeholder='Enter your email' id="emil" /> </div>
                 <label htmlFor="phone">Phone</label>
-                <input onChange={(e) => setphone(e.target.value)} type="text" placeholder='Enter your phone' id="phne" />
+                <div className='input-group'> <input onChange={(e) => setphone(e.target.value)} type="text" placeholder='Enter your phone' id="phne" /></div>
                 <label htmlFor="address">Address</label>
-                <input onChange={(e) => setaddress(e.target.value)} type="text"  placeholder='Enter your address' id="addr" />
+                <div className='input-group'> <input onChange={(e) => setaddress(e.target.value)} type="text"  placeholder='Enter your address' id="addr" /></div>
                 <label htmlFor="password">Password </label>
-                <input onChange={(e) => setpassword(e.target.value)} type="password"  placeholder='Enter your password' />
+                <div className='input-group'> <input onChange={(e) => setpassword(e.target.value)} type="password"  placeholder='Enter your password' /></div>
                 <label htmlFor="password">Confirm Password </label>
-                <input onChange={(e) => setConfirmPassword(e.target.value)} type="password" placeholder='Confirm password' />
+                <div className='input-group'> <input onChange={(e) => setConfirmPassword(e.target.value)} type="password" placeholder='Confirm password' /></div>
                 
                 <button type="submit">Register</button>
               </form>

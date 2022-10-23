@@ -56,11 +56,14 @@
                             margin-top: 10px;
                         }
                         input 
-                        {
+                        {   
                             height: 30px;
+                            width: 340px;
                             border: 1px solid gainsboro;
                             border-radius: 7px;
                             padding: 10px;
+                        }.input-group{
+                            :hover{background-color: rgb(244, 244, 79);}
                         }
                         button 
                         {

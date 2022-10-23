@@ -2,7 +2,7 @@ import React from 'react'
 import SideBar from '../SideBar/SideBar';
 import './about.scss'
 import Background from '../Images/Nitmed.png'
-import { NoEncryption } from '@mui/icons-material';
+
 
 
 
@@ -30,7 +30,7 @@ function About() {
          <footer>
             <div className='footer-body' >
                 <ul className='list'>
-                    <li>Email:nitmed@gmail.com</li>
+                    <li> Email:nitmed@gmail.com</li>
                     <li>Phone:0713538108</li>
                 </ul>
                 <div className='founder'>Founder: Macharia Tonny Githinji</div>

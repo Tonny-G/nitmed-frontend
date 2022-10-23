@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route,} from "react-router-dom";
 import {useState} from 'react'
 import "./App.css";
 import Login from "./components/Login/Login";
@@ -10,14 +10,14 @@ import Order from "./components/Order/Order";
 import About from "./components/About/About";
 
 function App() {
-const [user, setUser]= useState(true)
+const [user, setUser]= useState(null)
 
 
 
   return (
     <div className="App">
       <header className="App-header">
-               <Router>
+        <Router>
           <Routes>
             <Route path = "/" element = {user ? <Home setUser = {setUser}/> : <Login/>}/>
              <Route path="/login" element={user ? <Home setUser = {setUser}/>:<Login setUser = {setUser}/>}/>

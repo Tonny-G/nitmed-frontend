@@ -1,19 +1,18 @@
 import './sideBar.scss'
 import React from 'react'
 import { theme } from '../../theme'
-import { useState, useEffect } from 'react'
-import { Box, Button, Divider, Link, ListItem, ListItemButton, ListItemText, Stack, Typography } from '@mui/material'
-import { Link as RouterLink, useLocation } from 'react-router-dom'
+import { Box,  Divider,  ListItemButton,  Typography } from '@mui/material'
+import { Link as RouterLink, } from 'react-router-dom'
 import Logo from '../Logo'
-import { FiTrendingUp } from 'react-icons/fi'
+import { FiTrendingUp ,} from 'react-icons/fi'
+// import{CgShoppingBag} from'react-icons/cg'
 import { BiHomeAlt,BiDonateHeart } from 'react-icons/bi'
-import { AiFillEye, AiOutlineLineChart, AiFillCheckSquare,AiOutlineInfoCircle } from 'react-icons/ai';
-import {CgShoppingBag} from 'react-icons/cg'
+import { AiOutlineInfoCircle } from 'react-icons/ai';
 import nitmedlogo from '../Images/Nitmed.png'
+import imageSource from '../Images/cat.png'
 
 function SideBar() {
-    const imageSource = "https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
-    
+
     const user = {
         name: "John Doe",
         email: "john.doe@gmail.com",
@@ -33,7 +32,7 @@ function SideBar() {
                         </Box>
                     </Box>
                     <Box sx={{ flex: 2, display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
-                        <Typography fontSize={theme.fonts.small} variant="h6" component="p">{user.fullName}</Typography>
+                        <Typography fontSize={theme.fonts.small} variant="h6" component="p">{user.fullname}</Typography>
                         <Typography color={theme.palette.primary.grey} variant="p" component="p">{user.isAdmin ? "Admin" : "User"}</Typography>
                     </Box>
                 </Box>
@@ -59,16 +58,18 @@ function SideBar() {
                         </Box>
                     </ListItemButton>
                 </Box>
-            {//  <Divider sx={{ mt: 2, mb: 2 }} />
-              //  <Box sx={{  }}>
-                  //  <ListItemButton component={RouterLink} to={"/order"}>
-                      //  <CgShoppingBag />
-                      //  <Box sx={{ fontSize: '16px', ml: 2 }}>
-                           // Order
-                       // </Box>
-                   // </ListItemButton>
-               // </Box>
-            }
+                {
+            // <Divider sx={{ mt: 2, mb: 2 }} />
+            //    <Box sx={{  }}>
+            //        <ListItemButton component={RouterLink} to={"/order"}>
+            //            <CgShoppingBag />
+                     
+            //            <Box sx={{ fontSize: '16px', ml: 2 }}>
+            //                Order
+            //            </Box>
+            //         </ListItemButton>
+            //    </Box>
+                }
 
                 <Divider sx={{ mt: 2, mb: 2 }} />
                 <Box sx={{  }}>
